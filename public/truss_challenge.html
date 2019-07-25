@@ -1,0 +1,91 @@
+<html>
+
+<head>
+<meta charset="utf-8">        
+<link type="text/css" rel="stylesheet" href="forms.css">    
+    <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+    
+   
+    </style>    
+    
+</head>
+
+<body>
+    
+<div class="wrapper">
+    <nav>
+    <ul>
+     <li  class="mist"> <img src="Logo300x279.png" class='mistLogo'/></li>   
+    <li><a href="index.html">Home</a></li>    
+     <li class="dropdown">
+   <a >Events</a>
+ 
+        
+</li>  
+   <li class="dropdown">
+   <a id='reg'>Registration</a>
+   <div class="dropdown-content">
+    <a href="truss_challenge.html">Truss Challenge</a>
+    <a href="cad.html">CAD Contest</a>
+    <a href="poster.html">Poster Presentation</a>
+    <a href="poster.html">Project Showcasing</a>
+    <a href="project.html">Pervious Concrete Test</a>
+    <a href="cad.html">Photo Exhibition</a>
+   
+   
+  </div>
+        
+</li>
+    
+    <li><a href="contact.html">contact</a></li>    
+    <li><a href="admin.html">Admin</a></li>    
+        
+    </ul>
+    </nav>
+    </div>    
+    <hr>
+ <h2 class="head"> REGISTRATION FOR TRUSS CHALLENGE</h2> 
+    
+     
+     <form action="/submitTruss" method="post" enctype="multipart/form-data" netlify>
+            <div id="container">
+
+        <div class="left">
+         
+                   
+         <input  class='input' type="text" name='name[0][name]' placeholder= 'name' required/>
+          <input class='input' type="text" name='name[1][name]'  placeholder='name' required/>
+         <input class='input' type="text" name='name[2][name]'  placeholder='name' required/>
+         <input class='input' type="text" name='university' placeholder='university' required/>
+         <input class='input' type="text"placeholder='department' name='department'/>
+         
+         </div>
+             <div class="right">
+       
+         <input class='input' type="text" placeholder='mobile no' name='mobile' required/>
+         <input class='input' type="text" name='transactionID' placeholder='transactionID' required/>
+          <input class='input' type="text" name='email' placeholder='email' required/>
+          <input class='input' type="text" name='adress' placeholder='adress' required/>
+                <input class="input" name="file" type="file" placeholder="NID scan copy" required/>
+      
+           
+      
+      
+         </div>
+           
+         </div>
+          <input class="sub" type="submit" >
+        </form>
+    
+    
+   
+    
+    
+    
+</body>
+
+</html>                                      

@@ -1,0 +1,813 @@
+body{
+margin: 5px;
+background-color: black;
+width: 100%;
+ overflow-x: hidden;
+}
+nav{
+    margin-left: 0;
+       opacity: 0.8;
+    display: block;
+
+}
+ nav ul{
+        display: flex;
+        flex-flow:row;
+    padding: 0;
+    }
+nav li{
+    flex: 1 1 0;   
+    vertical-align: middle;
+    list-style: none;
+    }
+nav a{
+    background-color:dimgrey;;
+    text-decoration: none;
+    color:white;
+   display: block;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px
+    
+}
+.dropdown{
+    display: flex;
+    flex-flow: column;
+    z-index: +1
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display:none;
+  position:absolute;
+  background-color:dimgrey;
+  min-width: 270px;
+  //box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+}
+	nav a:hover{
+    background-color: #aaa
+}
+
+
+.container2{
+    display: flex;
+    flex-flow: row;
+}
+
+.container21{
+    width:30%;
+    height: 80vh;
+  //  background-color: aqua;
+}
+
+.container22{
+    display: flex;
+    flex-flow: column;
+     width:40%;
+    height: 80vh;
+    //background-color: darkblue;
+}
+
+.container23{
+     width:30%;
+    height: 80vh;
+    /*background-color: salmon; */
+
+    
+}
+.container21 .prize{
+
+    width: 400px;
+    height: 200px;
+    top: 20px
+}
+
+.container23 .deadline{
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 60%;
+        display: flex;
+        flex-flow: column;
+        border: 2px solid;
+    }
+    .deadline .fufu{
+        display: flex;
+        flex-flow: row;
+        font-size: 26px;
+        color: aliceblue;
+            
+    }
+    .deadline span{
+        position:relative;
+        top:5px;
+        font-size: 30px;
+        text-align: center;
+        color: azure;
+        font-weight: 900;
+    }
+  .container22 .quote{
+       
+        text-align: center;
+        color: aliceblue;
+        font-size: 30px;
+        font-family: monospace;
+        font-weight: 900;
+    }
+ .container22 .logo{
+ margin-left: 10%;
+        width: 400px;
+        height: 100px;
+    
+    }
+
+ .container22 .timer{
+    //background-color: forestgreen;
+       border: 0px solid;   
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 100px
+    }
+    .timer h1{
+        text-decoration: underline;
+        margin-bottom: 0;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+}
+
+table{
+    border-spacing: 60px 15px;
+}
+
+
+.time{
+    border: 2px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 36px;
+    color: azure
+    
+}
+
+
+.label{
+ color: white;
+}
+ #fantasy{
+      
+        top:100px;
+    margin: 50px auto;
+      width:100%;
+      max-width:1100px;
+        height: auto;
+      
+    }
+    
+    .row1 {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background-color: black;
+    
+
+        
+    }
+     .row2 {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background-color: black;
+
+        
+    }
+    .row1 .truss{
+    transition: all 0.5s ease;
+        background:url(truss1.jpg);
+    
+        background-size: cover;
+    background-origin: border-box;
+        background-position: center;
+        min-width: 200px;
+        height: 200px;
+        
+        display: flex;
+        justify-content: center;
+       flex-grow: 1;
+        border: 2px solid;
+        }
+    .row1 .truss #truss{
+           transition: all 0.2s ease;
+        text-decoration: none;
+    align-self: center;
+        font-size: 30px;
+        color: white;
+        
+    }
+    
+        .row1 .cad{
+    transition: all 0.5s ease;
+        background:url(cad1.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        min-width: 200px;
+        height: 200px;
+         border: 2px solid;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        }
+    
+    .row1 .cad #cad{
+          transition: all 0.5s ease;
+        text-decoration: none;
+    align-self: center;
+        font-size: 30px;
+        background-color:dimgrey;
+        
+    }
+        .row1 .project{
+    transition: all 0.1s ease;
+        background:url();
+               background-size: cover;
+        min-width: 200px;
+        height: 200px;
+       text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-grow:1;
+             border: 2px solid;
+        }
+    .row1 .project #project{
+          transition: all 0.5s ease;
+        text-decoration: none;
+    align-self: center;
+        font-size: 30px;
+        background-color:dimgrey;
+        
+    }
+    
+      .row2 .photo{
+    transition: all 0.5s ease;
+        background:url(newphoto.jpg);
+          background-size: cover;
+        min-width: 200px;
+        height: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+           border: 2px solid;
+        }
+    .row2 .photo #photo{
+          transition: all 0.5s ease;
+        text-decoration: none;
+    align-self: center;
+        font-size: 30px;
+        
+        
+    }
+    
+     .row2 .poster{
+    transition: all 0.5s ease;
+        background:url(newposter1.jpg);
+         background-size: cover;
+        min-width: 200px;
+        height: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+          border: 2px solid;
+        }
+    .row2 .poster #poster{
+          transition: all 0.5s ease;
+        text-decoration: none;
+    align-self: center;
+        font-size: 30px;
+        background-color:dimgrey;
+        
+    }
+    
+        .row2  .concrete{
+    transition: all 0.5s ease;
+        background:url(concrete.jpg);
+            background-size: cover;
+        min-width: 200px;
+        height: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+             border: 2px solid;
+        }
+    .row2 .concrete #concrete{
+          transition: all 0.5s ease;
+        text-decoration: none;
+    align-self: center;
+        font-size: 30px;
+        background-color:dimgrey;
+        
+    }
+    .row1 .cad:hover{
+     flex-grow: 1.5;
+        opacity: 0.5;
+
+   
+    }
+    .row1 .cad:hover >  #cad{
+        
+            font-size: 40px;
+            text-decoration: underline;
+            font-weight: 900;
+            background-color: dimgrey
+        
+        
+    }
+    .row1 .truss:hover{
+        flex-grow: 1.5;
+        opacity: 0.5;
+
+        
+    }
+    
+        .row1 .truss:hover > #truss{
+            font-size: 40px;
+            text-decoration: underline;
+            font-weight: 900;
+            background-color: dimgrey
+         
+        
+    }
+       .row1 .project:hover{
+        
+    flex-grow: 1.5;
+        opacity: 0.5;
+
+        
+    }
+    .row1 .project:hover >  #project{
+        
+       font-size: 40px
+        
+    }
+    
+    .row2 .photo:hover{
+         flex-grow: 1.5;
+        opacity: 0.5;
+
+        }
+        .row2 .photo:hover > #project{
+              font-size: 40px
+        }
+    
+    
+      .row2 .poster:hover{
+        
+       flex-grow: 1.5;
+        opacity: 0.5;
+
+        
+    }
+    .row2 .poster:hover >  #cad{
+        
+       font-size: 40px
+        
+    }
+    .row2 .concrete:hover{
+          flex-grow: 1.5;
+        opacity: 0.5;
+
+        
+    }
+        .row2 .concrete:hover > #truss{
+            font-size: 40px
+        
+    }
+.spnCont{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    .sponsor {
+       position: relative;
+        width: 100%;
+        margin-top: 100px;
+      background:url(cool-background5.png);
+        height: 200px;
+
+      
+}
+.pic{
+   display: flex;
+    flex-flow: column;
+    align-items: center
+}
+    .sponsor .pic img{
+       width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+ footer {
+        position: relative;
+        top:100px;
+        width: 100%;
+        height: 250px;
+        background: url(cool-background2.png);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+     }
+    footer .mistLogo{
+        width: 100px;
+        height: 90px;
+        top: 10px;
+    }
+    footer .title {
+        color: aliceblue;
+        font-size: 15px
+    }
+    footer h3{
+        color: beige;
+    }
+    footer .fb{
+        width: 40px;
+    }
+
+
+@media screen and (max-width:768px){
+     nav ul{
+        display: flex;
+        flex-flow:column;
+    padding: 0;
+    }
+    .container2{
+    display: flex;
+    flex-flow: column;
+}
+
+.container21{
+   width:100%;
+    height: 25vh;
+ /*   background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.container22{
+     width:100%;
+    height: 50vh;
+    /*  background-color: darkblue;*/
+}
+
+.container23{
+     width:100%;
+    height: 25vh;
+    /*  background-color: salmon;*/
+}
+    .container21 .prize{
+  
+    width: 200px;
+    height: 100px;
+    top: 20px;
+        
+}
+    
+.container23 .deadline{
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 70%;
+        display: flex;
+        flex-flow: column;
+        border: 2px solid;
+    }
+     .container22 .logo{
+       margin:auto;
+        width: 200px;
+        height: 50px;
+    
+    }
+     .container22 .timer{
+         border: 0px solid;   
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 0px
+    }
+    
+    table{
+    border-spacing: 30px 10px;
+}
+  .container22 .quote{
+       
+        text-align: center;
+        color: aliceblue;
+        font-size: 20px;
+        font-family: monospace;
+        font-weight: 900;
+    }
+
+.time{
+    border: 2px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+    color: azure
+    
+}
+
+ #fantasy{
+      
+        top:100px;
+    margin: 0 auto;
+      width:100%;
+        height: auto;
+      
+    }
+    
+    .row1 {
+        display: flex;
+       flex-flow: column;
+        flex: 1 1 0;
+        height: 300px;
+        background-color: black;
+    
+
+        
+    }
+     .row2 {
+        display: flex;
+   flex-flow: column;
+        flex-grow: 1;
+        height: 300px;
+        background-color: black;
+
+        
+    }
+    .row1 .truss{
+    transition: all 0.5s ease;
+        background:url(truss1.jpg);
+    
+        background-size: cover;
+    background-origin: border-box;
+        background-position: center;
+    min-width: 60px;
+        height: 200px;
+        
+        display: flex;
+        justify-content: center;
+
+        border: 2px solid;
+        }
+    .row1 .truss #truss{
+           transition: all 0.2s ease;
+        text-decoration: none;
+    align-self: center;
+        font-size: 20px;
+        color: white;
+        
+    }
+    
+        .row1 .cad{
+    transition: all 0.5s ease;
+        background:url(cad1.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        min-width: 60px;
+        height: 200px;
+         border: 2px solid;
+        display: flex;
+        justify-content: center;
+    
+        }
+    
+    .row1 .cad #cad{
+       transition: all 0.5s ease;
+        text-decoration: none;
+    align-self: center;
+        font-size: 20px;
+        background-color:dimgrey;
+        
+    }
+        .row1 .project{
+    transition: all 0.5s ease;
+        background:url(proj2.jpg);
+               background-size: cover;
+        min-width: 60px;
+        height: 200px;
+        text-align: center;
+        display: flex;
+      
+     
+             border: 2px solid;
+        }
+    .row1 .project #project{
+       
+          transition: all 0.5s ease;
+        text-decoration: none;
+    
+       
+        font-size: 20px;
+        background-color:dimgrey;
+          word-wrap: break-word;       
+
+    }
+    
+      .row2 .photo{
+    transition: all 0.5s ease;
+        background:url(newphoto.jpg);
+          background-size: cover;
+        min-width: 60px;
+        height: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      
+           border: 2px solid;
+        }
+    .row2 .photo #photo{
+          transition: all 0.5s ease;
+        text-decoration: none;
+    align-self: center;
+        font-size: 20px;
+        
+        
+    }
+    
+     .row2 .poster{
+    transition: all 0.5s ease;
+        background:url(newposter1.jpg);
+         background-size: cover;
+         background-position: center;
+        min-width: 60px;
+        height: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      
+          border: 2px solid;
+        }
+    .row2 .poster #poster{
+          transition: all 0.5s ease;
+        text-decoration: none;
+    align-self: center;
+        font-size: 20px;
+        background-color:dimgrey;
+        
+    }
+    
+        .row2  .concrete{
+    transition: all 0.5s ease;
+        background:url(concrete.jpg);
+            background-size: cover;
+        min-width: 60px;
+        height: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+             border: 2px solid;
+        }
+    .row2 .concrete #concrete{
+          transition: all 0.5s ease;
+        text-decoration: none;
+    align-self: center;
+        font-size: 20px;
+        background-color:dimgrey;
+        
+    }
+      .row1 .cad:hover{
+     height: 400px;
+        opacity: 0.5;
+
+   
+    }
+    .row1 .cad:hover >  #cad{
+        
+            font-size: 25px;
+            text-decoration: underline;
+            font-weight: 900;
+            background-color: dimgrey
+        
+        
+    }
+    .row1 .truss:hover{
+      height: 400px;
+        opacity: 0.5;
+
+        
+    }
+    
+        .row1 .truss:hover > #truss{
+            font-size: 25px;
+            text-decoration: underline;
+            font-weight: 900;
+            background-color: dimgrey
+         
+        
+    }
+       .row1 .project:hover{
+        
+    height: 400px;
+        opacity: 0.5;
+
+        
+    }
+    .row1 .project:hover >  #project{
+        
+       font-size: 25px
+        
+    }
+    
+    .row2 .photo:hover{
+         height: 400px;
+        opacity: 0.5;
+
+        }
+        .row2 .photo:hover > #project{
+              font-size: 25px
+        }
+    
+    
+      .row2 .poster:hover{
+        
+      height: 400px;
+    
+        opacity: 0.5;
+
+        
+    }
+    .row2 .poster:hover >  #poster{
+        
+       font-size: 25px
+        
+    }
+    .row2 .concrete:hover{
+      height: 400px;
+        opacity: 0.5;
+
+        
+    }
+        .row2 .concrete:hover > #truss{
+            font-size: 25px
+        
+    }
+ .sponsor {
+       
+     
+        height: 200px;
+
+      
+}
+
+    .sponsor .pic img{
+       width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+   
+    footer{
+        height: 200px
+    }
+
+    footer .mistLogo{
+        width: 70px;
+        height: 60px;
+        top: 10px;
+    }
+  
+  
+    footer .fb{
+        width: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+.dropdown-content a {
+  color: black;
+
+  text-decoration: none;
+  display: block;
+
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41};
+  

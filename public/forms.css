@@ -1,0 +1,242 @@
+body{
+    background: url("formback.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    min-height: 100%;
+}
+ .mistLogo{
+        height: 70px;
+    }
+.mist{
+        text-align: center;
+        
+    }
+@media screen and (min-width:768px){
+    .mist{
+        text-align: center;
+        
+    }
+    .mistLogo{
+        height: 70px;
+        filter: brightness(150%)
+    }
+}
+.wrapper{
+
+width: 100%;    
+
+margin:auto;
+
+}
+
+nav{
+    
+    position: relative;
+    opacity: 0.8;
+    display: block;
+    z-index: +2
+}
+
+nav ul{
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;
+    padding: 0;
+    vertical-align: middle;
+}
+nav a{
+    //background-color: aqua;
+    text-decoration: none;
+    color:white;
+   display: block;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    
+    
+}
+
+nav a:hover{
+    background-color: #666
+}
+
+@media screen and (min-width:768px){
+    
+    nav ul{
+        
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    nav li{
+    flex: 1 1 0;   
+        vertical-align: middle;
+    }
+   
+    
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display:none;
+  position:absolute;
+  background-color:dimgrey;
+  min-width: 270px;
+  //box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+}
+	
+.dropdown-content a {
+  color: black;
+//padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+ form{
+     position: absolute;
+    top: 60%;
+     left: 50%; 
+     transform: translate(-50%,-50%);
+     display: flex;
+     flex-flow: column;
+     width: 600px;
+     height:400px;
+    //background-color: aqua;
+     justify-content: center;
+     align-items: center;
+         
+     
+    }
+ #container{
+background:rgb(0,0,0,0.5);
+     width: 90%;
+     height: 90%;
+    display: flex;
+    flex-flow: row;
+        justify-content: space-around
+}
+.left {
+    display: flex;
+    flex-flow: column;
+    width: 25%;
+
+
+}
+#container .input
+{
+    margin-top: 40px;
+    font-size: 14px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid;
+}
+.right{
+      width: 25%;
+    display: flex;
+    flex-flow: column;
+}
+.head{
+    text-align: center;
+    color: aliceblue
+}
+@media screen and (max-width:768px){
+    form{
+         position: relative;
+    top: 50%;
+     left: 50%; 
+     transform: translate(-50%,-50%);
+     display: flex;
+     flex-flow: column;
+     width: 600px;
+     height:800px;
+    //background-color: aqua;
+     justify-content: center;
+     align-items: center;
+    }           
+    #container{
+        background: rgb(0,0,0,0.5);
+        position: absolute;
+        display: flex;
+        flex-flow: column;
+       align-items: center;
+        justify-content: flex-end
+    }
+    .left{
+        width: 30%;
+    }
+    .right{
+width: 30%;
+    }
+    .sub{
+        position: absolute;
+        bottom: 0;
+        background-color: fuchsia
+    }
+     .input{
+        
+    margin-top: 10px;
+    font-size: 30px;
+}
+    .right .input{
+     margin-top: 20px; font-size: 30px;
+}
+    ::placeholder{
+font-size: 15px;
+    }
+    
+}
+
+::placeholder{
+   font-size: 18px;
+  /*background:linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);*/
+    
+   background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {
+    display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41};
+    
+
+
+
+    
+
+
